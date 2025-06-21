@@ -1,0 +1,60 @@
+
+Vector<3, Vector<3, Float>> A := [[1,2,3],[1.2,2,3.4],[1e2,2e3,3e4]];
+
+
+Int A_len := Len(A);
+Float Det := 0;
+
+For (Int i := 0; i < A_len; i := i + 1)
+{
+    For (Int j := 0; j < A_len; j := j + 1)
+    {
+        For (Int k := 0; k < A_len; k := k + 1)
+        {
+            If (i!= j  &&  j != k && k!=i)
+            Det := Det + A[0][i]*((i%2)*2 + -1) + A[1][j]*((j%2)*2 + -1) +  A[2][k]*((k%2)*2 + -1);
+        };
+    };
+};
+
+If (Det!=0)
+{
+    Vector<3, Vector<3, Float>> A_Adj := [[0,0,0],[0,0,0],[0,0,0]];
+    For (Int i := 0; i < A_len; i := i + 1)
+    {
+        For (Int j := 0; j < A_len; j := j + 1)
+        {
+            Int p_eff := 0;
+            Int q_eff := 0;
+            Vector<2, Vector<2, Float>> minor_ij := [[0,0],[0,0]];
+            For (Int p := 0; p < A_len; p := p + 1)
+            {
+                If (p!=i)
+                {
+                    p_eff := p_eff + 1;
+                    For (Int q := 0; q < A_len; q := q + 1)
+                    {
+                        If (q!=j)
+                        {
+                            q_eff := q_eff + 1;
+                            minor_ij[p_eff][q_eff] := A[p][q];
+                        };
+                    };
+                };
+            };
+
+            Float minor_det := minor_ij[0][0]*minor_ij[1][1] - minor_ij[1][0]*minor_ij[0][1];
+            A_Adj[i][j] := (-1)**(i+j)*minor_det;
+        };
+    };
+
+    For (Int i := 0; i < A_len; i := i + 1)
+    {
+        For (Int j := i; j < A_len; j := j + 1)
+        {
+            A_Adj[i][j] := A_Adj[j][i];
+        };
+    };
+
+    Vector<3, Vector<3, Float>> A_Inv := (1/Det)*A_Adj;
+};

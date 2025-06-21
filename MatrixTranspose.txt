@@ -1,0 +1,15 @@
+
+Vector<3, Vector<3, Float>> A := [[1,2,3],[1.2,2,3.4],[1e2,2e3,3e4]];
+
+
+Int A_len := Len(A);
+
+
+For (Int i := 0; i < A_len; i := i + 1)
+{
+    For (Int j := i; j < A_len; j := j + 1)
+    {
+        A[i][j] := A[j][i];
+    };
+};
+

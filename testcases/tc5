@@ -1,0 +1,8 @@
+# Test Case 5: Syntax Aberrations Lexer Won't Reject
+` Bizarre Syntax That Lexer Allows `
+# Note: Lexer only breaks input into tokens. Syntax validation is parser's job.
+# These will tokenize without complaint, but would never compile
+vector weirdVector := [abcd][hello]abc[12[]456[[[
+matrix strangeMatrix := [1,2;3,a]
+int brokenExpression := (42()))1)2(23)((
+bool int for while if else abc & := ` hello ` 

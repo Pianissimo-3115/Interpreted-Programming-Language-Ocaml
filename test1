@@ -1,0 +1,28 @@
+{
+int a:=5;
+int b:=6;
+vector<int> neww[3]:=[1,2,3];
+matrix<int> next[3][3]:=[[1,2,3],[4,5,6],[7,8,9]];
+
+{
+	int c:=10;
+	int d:=12;
+
+
+{
+	{
+		while(a<=b) {
+			Print(a);
+			Print(b);
+			if(neww>=[0,0,0]) Print(b);
+			else ;
+			for(int i:=0;i<=10;i:=i+1) Print(c);
+			for(int i:=0;i<=10;i:=i+1) {
+				Print(neww);
+				}
+		
+		}
+	}
+}
+}
+}

@@ -1,0 +1,32 @@
+{
+int a:=1;
+vector<int> b[5];
+b[2]:=2;
+`
+hello 
+world
+`
+b:=[1,2,3,4,5];
+int x:=2;  ; ; ; ; ; ; ; ; ;
+matrix<int>c[3][4];
+c[1][2]:=2;
+c[32][14]:=Input(file.txt);
+c[12][12]:=Input();
+Print(c);
+c[3][4]:=b[2]*a mod 3 -10*-b[2];
+}
+{
+vector<int> a[5];
+matrix<int> b[5][5];
+vector<float> e[5];
+a[1]:=Input();
+b[1][1]:=Input();
+Print(a);
+Print(b);
+float c:=mag(a);
+c:=dim(a);
+c:=angle(a,e);
+vector<float> f[4]; # this is a vector
+#c:=angle(a,f);
+
+}

@@ -1,0 +1,12 @@
+# Test Case 3: Numeric Input Edge Cases
+`
+Peculiar
+ Numeric 
+	Input 
+		Formats `
+int a := 0005             # Leading zeros
+float b := .0             # Decimal without leading zero
+int c := 00042            # More leading zeros
+float e := .14            # Leading decimal point
+int f := 000000100        # Excessive leading zeros
+

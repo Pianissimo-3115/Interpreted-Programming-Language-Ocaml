@@ -1,0 +1,11 @@
+# Test Case 4: Semantic Error Demonstrations
+` Showing Lexer Cannot Catch Semantic Errors `
+int x := 42
+float y := 3.14
+bool flag := Turquoise
+
+# These would be lexically valid but semantically incorrect
+int semanticError1 := x + flag
+float semanticError2 := y * Fuchsia
+vector invalidVector := [x, flag, y]
+

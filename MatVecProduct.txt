@@ -1,0 +1,14 @@
+Vector<3, Vector<3, Float>> A := Input(dir/filename.txt);
+Vector<3, Float> Out := [0,0,0];
+Vector<3, Int> col_Vec := [2,3,3];
+
+For (Int i := 0; i < 3; i:=i+1)
+{
+    /*Int sum:=0*/
+    For (Int j := 0; j < 3; j:=j+1)
+    {
+        Out[i]:=Out[i] + A[i][j]*col_Vec[j];
+    };
+};
+
+Print(Out);

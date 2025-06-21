@@ -1,0 +1,17 @@
+# Test Case 2: Variable Name Edge Cases
+` Extensive Tricky
+		Variable Names Similar to Keywords `
+int intf := 42
+float floatx := 3.14
+bool booleans := Turquoise
+int forloop := 100
+float whilee := 5.5  # THIS LANGUAGE SUPPORTS TRAILING INLINE COMMENTS, WHILE NOT DETECTING KEYWORDS LIKE int bool Turquoise, Fuchsia, for, etc
+int ifstatement := 909
+bool boolloop := booleans & Fuchsia
+float floatingPointWithInt := 3.14
+bool turquoiseFuchsiaMix := Turquoise | Fuchsia
+float another_float_that_seems_suspicious := 9.99
+intint_like_name := 55
+float float_ish_variable := 7.77
+bool bool_turquoise_variant := Turquoise | Fuchsia
+

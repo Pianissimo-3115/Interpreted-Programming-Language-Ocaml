@@ -1,0 +1,23 @@
+# Test Case 1: Basic Comprehensive Code
+` Normal, Straightforward Code Scenario `
+{
+    int mainCalculation := 100;
+    float precision := 3.14159;
+    float avogadro := 6.022E23;
+    float plancks := 6.626e-34;
+    vector<float> dataPoints[5] := [1.5, 2.7, 3.3, 4.1, 5.6];
+    vector<float> correlationMatrix[4] := [0.5; 0.3, 0.2, 0.4];
+
+    for (int i := 0; i < 10; i := i + 1) {
+        float intermediateResult := dataPoints[i mod 5] * precision;
+        Print(intermediateResult);
+    }
+
+    while (mainCalculation > 0) {
+        mainCalculation := mainCalculation - 10;
+        if (mainCalculation mod 3 =/= 0) {
+            Print(mainCalculation);
+        } else ;
+    }
+}
+
